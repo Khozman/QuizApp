@@ -85,18 +85,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <RadioButton android:id="@+id/radio3_four"
+                <RadioButton
+                    android:id="@+id/radio3_four"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4"/>
-                <RadioButton android:id="@+id/radio3_six"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/radio3_six"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="6"/>
-                <RadioButton android:id="@+id/radio3_two"
+                    android:text="6" />
+
+                <RadioButton
+                    android:id="@+id/radio3_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2"/>
+                    android:text="2" />
 
             </RadioGroup>
 
@@ -123,6 +128,8 @@
                     android:layout_height="wrap_content"
                     android:text="Cat Family"/>
 
+
+
             </RadioGroup>
 
             <TextView
@@ -135,21 +142,52 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <RadioButton android:id="@+id/radio5_school"
+                <RadioButton
+                    android:id="@+id/radio5_school"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="School"/>
-                <RadioButton android:id="@+id/radio5_train"
+                    android:text="School" />
+
+                <RadioButton
+                    android:id="@+id/radio5_train"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Train"/>
-                <RadioButton android:id="@+id/radio5_house"
+                    android:text="Train" />
+
+                <RadioButton
+                    android:id="@+id/radio5_house"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="House"/>
+                    android:text="House" />
 
             </RadioGroup>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. Which of the following countries are from Africa?"
+                android:paddingTop="16dp"/>
+
+                <CheckBox android:id="@+id/angola_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Angola"/>
+                <CheckBox android:id="@+id/zimbabwe_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zimbabwe"/>
+                <CheckBox android:id="@+id/china_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="China"/>
+                <CheckBox android:id="@+id/canada_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Canada"/>
+                <CheckBox android:id="@+id/soutAfrica_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="South Africa"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -159,6 +197,13 @@
                 android:layout_margin="32dp"
                 android:onClick="submitOrder"/>
 
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Results"
+                android:textSize="30sp"
+                android:paddingBottom="16dp"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -174,6 +219,26 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="0"
+                    android:textSize="25sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Percentage "
+                    android:textSize="25sp"/>
+
+                <TextView android:id="@+id/percent_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="0.0%"
                     android:textSize="25sp"/>
 
             </LinearLayout>
